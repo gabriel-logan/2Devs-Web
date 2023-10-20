@@ -10,6 +10,9 @@ import Main from '../pages/Main';
 import GeneralInfoPage from '../pages/Informations';
 import MyNetwork from '../pages/MyNetwork';
 import CpfGeneratorPage from '../pages/generators/Cpf';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsOfUse from '../pages/Terms';
+import MyAppVersions from '../pages/ApksDownloads';
 
 export default function ConfigRoutes() {
 	return (
@@ -18,6 +21,9 @@ export default function ConfigRoutes() {
 			<Route path="/InfoPage" element={<GeneralInfoPage />} />
 			<Route path="/MyNetwork" element={<MyNetwork />} />
 			<Route path="/CpfGerador" element={<CpfGeneratorPage />} />
+			<Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+			<Route path="/Terms" element={<TermsOfUse />} />
+			<Route path="/ApksDownloads" element={<MyAppVersions />} />
 			<Route path="*" element={<NotFoundPage />} />
 		</Routes>
 	);

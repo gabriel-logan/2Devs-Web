@@ -42,6 +42,9 @@ export default function Main() {
 				Avalie o aplicativo
 			</Link>
 			<h4>TA sendo feita ainda, se ainda ta feio, a culpa é do PT</h4>
+			<Link to={'/PrivacyPolicy'}>Ler politicas de privacidade</Link>
+			<Link to={'/Terms'}>Ler termos de uso</Link>
+			<Link to={'/ApksDownloads'}>Testar APK</Link>
 		</MainStyles>
 	);
 }
