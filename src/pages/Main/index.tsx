@@ -32,7 +32,7 @@ const MainStyles = styled.section`
 export default function Main() {
 	return (
 		<MainStyles>
-			<img src="2Devs-Web/marca.svg" alt="logoMarca" />
+			<img src="marca.svg" alt="logoMarca" />
 			<h1>Bem-vindo ao 2Devs</h1>
 			<Link
 				to={'https://play.google.com/store/apps/details?id=com.gabriellogan.toDevs'}

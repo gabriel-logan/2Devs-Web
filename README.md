@@ -5,12 +5,12 @@ App desenvolvido para ios e android
 
 terms of use and privacy
 
-https://gabriel-logan.github.io/2Devs-Mobile/
+https://2devs.tech/PrivacyPolicy
 
-https://gabriel-logan.github.io/2Devs-Mobile/terms.html
+https://2devs.tech/terms
 
 Downloads
 
 Playstore - https://play.google.com/store/apps/details?id=com.gabriellogan.toDevs
 
-Android Apk - https://gabriel-logan.github.io/2Devs-Mobile/appsDownload.html
+Android Apk - https://2devs.tech/ApksDownloads

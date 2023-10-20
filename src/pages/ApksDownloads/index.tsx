@@ -10,6 +10,9 @@ const Container = styled.div`
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;
 
 const Heading = styled.h1`
@@ -19,10 +22,15 @@ const Heading = styled.h1`
 const List = styled.ul`
 	list-style-type: none;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 `;
 
 const ListItem = styled.li`
 	margin-bottom: 10px;
+	display: flex;
+	gap: 40px;
 `;
 
 const DownloadButton = styled(Link)`
@@ -45,32 +53,56 @@ function MyAppVersions() {
 				<Heading className="text-center">My App Versions</Heading>
 				<List className="list-unstyled">
 					<ListItem>
+						Version 1.0.2 12
+						<DownloadButton
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.2)%2012.apk"
+							download
+						>
+							Download
+						</DownloadButton>
+					</ListItem>
+					<ListItem>
 						Version 1.0.2 10
-						<DownloadButton to="/apks/(1.0.2) 10.apk" download>
+						<DownloadButton
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.2)%2010.apk"
+							download
+						>
 							Download
 						</DownloadButton>
 					</ListItem>
 					<ListItem>
 						Version 1.0.1 9
-						<DownloadButton to="/apks/(1.0.1) 9.apk" download>
+						<DownloadButton
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%209.apk"
+							download
+						>
 							Download
 						</DownloadButton>
 					</ListItem>
 					<ListItem>
 						Version 1.0.1 8
-						<DownloadButton to="/apks/(1.0.1) 8.apk" download>
+						<DownloadButton
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%208.apk"
+							download
+						>
 							Download
 						</DownloadButton>
 					</ListItem>
 					<ListItem>
 						Version 1.0.1 7
-						<DownloadButton to="/apks/(1.0.1) 7.apk" download>
+						<DownloadButton
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%207.apk"
+							download
+						>
 							Download
 						</DownloadButton>
 					</ListItem>
 					<ListItem>
 						Version 1.0.1 6
-						<DownloadButton to="/apks/(1.0.1) 6.apk" download>
+						<DownloadButton
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%206.apk"
+							download
+						>
 							Download
 						</DownloadButton>
 					</ListItem>
