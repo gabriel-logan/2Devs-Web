@@ -13,6 +13,9 @@ import CpfGeneratorPage from '../pages/generators/Cpf';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsOfUse from '../pages/Terms';
 import MyAppVersions from '../pages/ApksDownloads';
+import ImcPage from '../pages/mathematics/Imc';
+import FinancialCalculatorPage from '../pages/mathematics/FinancialCalculator';
+import DefaultCalculatorPage from '../pages/mathematics/DefaultCalculator';
 
 export default function ConfigRoutes() {
 	return (
@@ -23,7 +26,10 @@ export default function ConfigRoutes() {
 			<Route path="/CpfGerador" element={<CpfGeneratorPage />} />
 			<Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
 			<Route path="/Terms" element={<TermsOfUse />} />
+			<Route path="/Imc" element={<ImcPage />} />
+			<Route path="/FinancialCalculator" element={<FinancialCalculatorPage />} />
 			<Route path="/ApksDownloads" element={<MyAppVersions />} />
+			<Route path="/DefaultCalculator" element={<DefaultCalculatorPage />} />
 			<Route path="*" element={<NotFoundPage />} />
 		</Routes>
 	);

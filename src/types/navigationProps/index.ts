@@ -22,6 +22,9 @@ const RoutesProps = {
 	AsciiAndHex: undefined,
 	HexAndDecimal: undefined,
 	DataConverterMain: undefined,
+	FinancialCalculator: undefined,
+	Imc: undefined,
+	DefaultCalculator: undefined,
 };
 
 export type RoutesStringsProps = keyof typeof RoutesProps;

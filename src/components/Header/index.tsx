@@ -7,12 +7,12 @@ import CustomDrawerContent from '../DrawerContent';
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 
 	const location = useLocation();
 
 	const toggleDrawer = () => {
-		setIsOpen((prevState) => !prevState);
+		setIsOpen(!isOpen);
 	};
 
 	const path = location.pathname.split('/').pop(); // Obtenha o último segmento da URL como o nome da rota

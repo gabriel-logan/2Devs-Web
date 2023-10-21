@@ -55,6 +55,9 @@ const drawerMenu: (
 			{ title: 'Equação de primeiro grau', route: 'LinearEquation' },
 			{ title: 'Equação de segundo grau', route: 'QuadraticEquation' },
 			{ title: 'Mmc e Mdc', route: 'MmcMdc' },
+			{ title: 'Calculadora Financeira', route: 'FinancialCalculator' },
+			{ title: 'Calculadora IMC', route: 'Imc' },
+			{ title: 'Calculadora Padrão', route: 'DefaultCalculator' },
 		],
 	},
 	{
