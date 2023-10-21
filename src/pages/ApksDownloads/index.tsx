@@ -53,9 +53,9 @@ function MyAppVersions() {
 				<Heading className="text-center">My App Versions</Heading>
 				<List className="list-unstyled">
 					<ListItem>
-						Version 1.0.2 12
+						Version 1.0.2 11
 						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.2)%2012.apk"
+							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.2)%2011.apk"
 							download
 						>
 							Download
