@@ -22,7 +22,7 @@ const Header = () => {
 			<AiOutlineMenu onClick={toggleDrawer} />
 			<h1>{path === '' ? 'Main' : path}</h1>
 			<Drawer open={isOpen} onClose={toggleDrawer} direction="left" className="drawer">
-				<img src="marcalight.svg" alt="logoMarca" />
+				<img src="https://2devs.tech/marcalight.svg" alt="logoMarca" />
 				<CustomDrawerContent />
 			</Drawer>
 		</HeaderStyles>
