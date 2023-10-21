@@ -83,14 +83,10 @@ export default function GeneralInfoPage() {
 			<Section>
 				<SectionText>E-mail: contato@exemplo.com</SectionText>
 			</Section>
-			<LinkButton onClick={() => window.open('https://gabriel-logan.github.io/2Devs-Mobile')}>
+			<LinkButton onClick={() => window.open('https://2devs.tech/PrivacyPolicy')}>
 				Políticas de Privacidade
 			</LinkButton>
-			<LinkButton
-				onClick={() => window.open('https://gabriel-logan.github.io/2Devs-Mobile/terms.html')}
-			>
-				Termos de Uso
-			</LinkButton>
+			<LinkButton onClick={() => window.open('https://2devs.tech/Terms')}>Termos de Uso</LinkButton>
 			<Section style={{ marginTop: '10px' }}>
 				<SectionTitle>Contribuidores</SectionTitle>
 			</Section>
