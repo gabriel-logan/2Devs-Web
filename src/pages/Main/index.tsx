@@ -41,10 +41,12 @@ export default function Main() {
 			>
 				Avalie o aplicativo
 			</Link>
-			<h4>TA sendo feita ainda, se ainda ta feio, a culpa é do PT</h4>
-			<Link to={'/PrivacyPolicy'}>Ler politicas de privacidade</Link>
-			<Link to={'/Terms'}>Ler termos de uso</Link>
-			<Link to={'/ApksDownloads'}>Testar APK</Link>
+			<h4 style={{ maxWidth: '90%' }}>TA sendo feita ainda, se ainda ta feio, a culpa é do PT</h4>
+			<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+				<Link to={'/PrivacyPolicy'}>Ler politicas de privacidade</Link>
+				<Link to={'/Terms'}>Ler termos de uso</Link>
+				<Link to={'/ApksDownloads'}>Testar APK</Link>
+			</div>
 		</MainStyles>
 	);
 }

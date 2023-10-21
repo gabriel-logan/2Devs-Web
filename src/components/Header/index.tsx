@@ -7,7 +7,7 @@ import CustomDrawerContent from '../DrawerContent';
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(true);
 
 	const location = useLocation();
 
@@ -23,7 +23,7 @@ const Header = () => {
 			<h1>{path === '' ? 'Main' : path}</h1>
 			<Drawer open={isOpen} onClose={toggleDrawer} direction="left" className="drawer">
 				<img src="https://2devs.tech/marcalight.svg" alt="logoMarca" />
-				<CustomDrawerContent />
+				<CustomDrawerContent setIsOpen={setIsOpen} />
 			</Drawer>
 		</HeaderStyles>
 	);

@@ -1,14 +1,16 @@
+import { DirectRoutesProps, SubRoutesProps } from '../../types/navigationProps';
+
 const drawerMenu: (
 	| {
 			title: string;
-			route: string;
+			route: DirectRoutesProps;
 			menuList?: undefined;
 	  }
 	| {
 			title: string;
 			menuList: {
 				title: string;
-				route: string;
+				route: SubRoutesProps;
 			}[];
 			route?: undefined;
 	  }
