@@ -47,65 +47,58 @@ const DownloadButton = styled(Link)`
 `;
 
 function MyAppVersions() {
+	const apks: {
+		version: string;
+		vcode: number;
+	}[] = [
+		{
+			version: '1.0.3',
+			vcode: 12,
+		},
+		{
+			version: '1.0.2',
+			vcode: 11,
+		},
+		{
+			version: '1.0.2',
+			vcode: 10,
+		},
+		{
+			version: '1.0.1',
+			vcode: 9,
+		},
+		{
+			version: '1.0.1',
+			vcode: 8,
+		},
+		{
+			version: '1.0.1',
+			vcode: 7,
+		},
+		{
+			version: '1.0.1',
+			vcode: 6,
+		},
+	];
+
 	return (
 		<PageWrapper>
 			<Container>
 				<Heading className="text-center">My App Versions</Heading>
 				<List className="list-unstyled">
-					<ListItem>
-						Version 1.0.2 11
-						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.2)%2011.apk"
-							download
-						>
-							Download
-						</DownloadButton>
-					</ListItem>
-					<ListItem>
-						Version 1.0.2 10
-						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.2)%2010.apk"
-							download
-						>
-							Download
-						</DownloadButton>
-					</ListItem>
-					<ListItem>
-						Version 1.0.1 9
-						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%209.apk"
-							download
-						>
-							Download
-						</DownloadButton>
-					</ListItem>
-					<ListItem>
-						Version 1.0.1 8
-						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%208.apk"
-							download
-						>
-							Download
-						</DownloadButton>
-					</ListItem>
-					<ListItem>
-						Version 1.0.1 7
-						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%207.apk"
-							download
-						>
-							Download
-						</DownloadButton>
-					</ListItem>
-					<ListItem>
-						Version 1.0.1 6
-						<DownloadButton
-							to="https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(1.0.1)%206.apk"
-							download
-						>
-							Download
-						</DownloadButton>
-					</ListItem>
+					{apks.map(({ version, vcode }) => {
+						return (
+							<ListItem>
+								Version {version} {vcode.toString()}
+								<DownloadButton
+									to={`https://github.com/gabriel-logan/2Devs-Web/raw/main/apks/(${version})%20${vcode.toString()}.apk`}
+									download
+								>
+									Download
+								</DownloadButton>
+							</ListItem>
+						);
+					})}
 					{/* You can add more versions here */}
 				</List>
 				<Link to="/Terms">READ TERM AND POLICY</Link>
