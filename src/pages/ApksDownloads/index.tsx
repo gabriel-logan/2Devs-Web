@@ -52,6 +52,14 @@ function MyAppVersions() {
 		vcode: number;
 	}[] = [
 		{
+			version: '1.0.5',
+			vcode: 15,
+		},
+		{
+			version: '1.0.4',
+			vcode: 14,
+		},
+		{
 			version: '1.0.3',
 			vcode: 13,
 		},
@@ -70,18 +78,6 @@ function MyAppVersions() {
 		{
 			version: '1.0.1',
 			vcode: 9,
-		},
-		{
-			version: '1.0.1',
-			vcode: 8,
-		},
-		{
-			version: '1.0.1',
-			vcode: 7,
-		},
-		{
-			version: '1.0.1',
-			vcode: 6,
 		},
 	];
 
