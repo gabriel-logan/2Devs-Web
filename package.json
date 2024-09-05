@@ -6,8 +6,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
     "lint": "npx eslint src",
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
@@ -46,7 +44,6 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "prettier": "^3.0.3",
     "style-loader": "^3.3.3",
